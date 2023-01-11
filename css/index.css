@@ -42,7 +42,40 @@ a{
     color: var(--secondary-color);
     cursor: pointer;
 }
+/* css callout */
 
+  .alert.alert-callout {
+    position: relative;
+    padding: 0.75rem 1.25rem 0.75rem 3.25rem;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .alert.alert-callout:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2rem;
+    font-family: "FontAwesome";
+    line-height: 3;
+    text-align: center;
+  }
+  
+  .alert-callout.alert-info {
+    border-color: #0c5460;
+    border-radius: 4px;
+  }
+  .alert-callout.alert-info:before {
+    background: #0c5460;
+    color: #d1ecf1;
+    content: "\f129";
+  }
+
+  .list-question{
+    padding: 2rem;
+  }
+  
+  
 
 
 
