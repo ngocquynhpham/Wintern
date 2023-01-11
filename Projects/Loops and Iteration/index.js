@@ -15,3 +15,18 @@ function mySqrt(){
 }
 
 // Bài 2
+
+function cau2(){
+    let a
+    while(a!='done'){
+    a=prompt("nhập nội dung ")
+    console.log(eval('a'))
+    }
+    
+}
+
+function cau3(population,n){
+    a=population+n*12*30
+    console.log(a)
+   
+}
