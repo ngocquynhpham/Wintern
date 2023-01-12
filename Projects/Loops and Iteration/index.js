@@ -5,9 +5,9 @@ let row2 = `\n---${space_3}------------`;
 let this_is_result = ``;
 function mySqrt(){
     console.log(row1,row2);
-    for(let i = 1; i<3; i++){
+    for(let i = 1; i<11; i++){
         let result =  Math.sqrt(i);
-        let i_parse = `${i}.0`;
+        let i_parse = `${i} .0`;
         console.log(`\n${i_parse}${space_3}${result}`);
         this_is_result += `${row1}${row2}\n${i_parse}${space_3}${result}`;
     }
@@ -20,7 +20,7 @@ function cau2(){
     let a
     while(a!='done'){
     a=prompt("nhập nội dung ")
-    console.log(eval('a'))
+    eval(alert(a))
     }
     
 }
@@ -28,5 +28,4 @@ function cau2(){
 function cau3(population,n){
     a=population+n*12*30
     console.log(a)
-   
 }
