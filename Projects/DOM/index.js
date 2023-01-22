@@ -5,18 +5,19 @@ let lbpwd = document.getElementById("lbpwd");
 let minpwd = document.getElementById("minpwd")
 let upcasepwd = document.getElementById("upcasepwd")
 let upcharacterspecial = document.getElementById("upcharacterspecial")
-let btnlogin=document.getElementById("btnlogin")
-let modalbox=document.getElementById("myModal")
+let btnlogin = document.getElementById("btnlogin")
+let modalbox = document.getElementById("myModal")
 
 // hàm kiểm tra in hoa
 function checkUpcase() {
     let value = pwd.value;
-    let isUperCase
     for (let i = 0; i < value.length; i++) {
         if (value[i] === value[i].toUpperCase()) {
-            return isUperCase = true;
-        } else { return isUperCase = false }
+            return true;
+        } 
+       
     }
+    return false; 
 
 }
 
@@ -29,84 +30,60 @@ function checkCharacterSpecial() {
 
 
 }
+
 function checkValidation() {
-   
+    pwd.style.borderColor = "red"
+    expwd.style.borderColor = "red"
+    lbpwd.style.display = "block"
+    lbexpwd.style.display = "block"
+    minpwd.style.color = "red"
+    upcasepwd.style.color = "red"
+    upcharacterspecial.style.color = "red"
+    btnlogin.dataset.target = ""
+
     if (expwd.value === "" && pwd.value === "") {
-      
-        lbexpwd.style.display = "inline"
-        lbpwd.style.display = "inline"
-        pwd.style.borderColor = "red";
-        expwd.style.borderColor = "red";
-        upcharacterspecial.style.color = "red"
-        upcasepwd.style.color = "red"
-        minpwd.style.color = "red"  
-       
     } else if (pwd.value === "") {
-        pwd.style.borderColor = "red";
-        lbexpwd.style.display = "none";
-        lbpwd.style.display = "inline";
-        upcharacterspecial.style.color = "red";
-        upcasepwd.style.color = "red";
-        minpwd.style.color = "red";
-        
+        lbexpwd.style.display = "none"
+
     } else if (expwd.value === "") {
-        expwd.style.borderColor = "red";
         lbpwd.style.display = "none"
-        lbexpwd.style.display = "inline"
-        pwd.style.borderColor = "#CCCCCC";
-        upcharacterspecial.style.color = "red"
-        upcasepwd.style.color = "red"
-        minpwd.style.color = "red"
-        
+
     } else if (expwd.value !== pwd.value) {
         lbpwd.style.display = "none"
-        lbexpwd.innerHTML = 'Xác nhận mật khẩu không trùng khớp, vui lòng kiểm tra lại'
-        lbexpwd.style.display = "inline"
-        pwd.style.borderColor = "red";
-        expwd.style.borderColor = "red";
-        upcharacterspecial.style.color = "red"
-        upcasepwd.style.color = "red"
-        minpwd.style.color = "red"
-       
+        lbexpwd.innerHTML = "Xác nhận mật khẩu không trùng khớp, Vui lòng kiểm tra lại"
     } else {
-        lbexpwd.style.display = "none"
         lbpwd.style.display = "none"
-        
+        lbexpwd.style.display = "none"
 
-        if (pwd.value.length < 8) {
-            minpwd.style.color = "red"
-            pwd.style.borderColor = "red";
-            expwd.style.borderColor = "red";
-            
-        } else {
+        if (pwd.value.length > 8) {
             minpwd.style.color = "green"
+
         }
-        if (!checkUpcase()) {
-            upcasepwd.style.color = "red"
-            pwd.style.borderColor = "red";
-            expwd.style.borderColor = "red";
-           
-        } else {
+        if (checkUpcase()) {
             upcasepwd.style.color = "green"
+
         }
-        if (!checkCharacterSpecial()) {
-            upcharacterspecial.style.color="red"
-            pwd.style.borderColor = "red";
-            expwd.style.borderColor = "red";
-        }
-        else {
+        if (checkCharacterSpecial()) {
             upcharacterspecial.style.color = "green"
             pwd.style.borderColor = "#CCCCCC";
             expwd.style.borderColor = "#CCCCCC";
-            btnlogin.dataset.target="#myModal"
             
         }
-       
-       
+        if(upcharacterspecial.style.color==="green" &&  upcasepwd.style.color === "green" &&  minpwd.style.color === "green"
+        ){
+            btnlogin.dataset.target = "#myModal"
+        }else{
+
+        }
+
+
+
     }
-
-
 }
+
+
+
+
 
 function showpwd(e, id) {
 
