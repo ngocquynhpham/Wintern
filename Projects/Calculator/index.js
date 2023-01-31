@@ -10,7 +10,7 @@ let notep2=document.getElementById("notep2")
 
 function sunMode(){
     document.body.style.backgroundColor="white"
-    iconSun.style.color="black"
+    iconSun.style.color="#7B7E86"
     iconMoon.style.color="#DEDEDE;"
     mode.style.background="#F9F9F9"
     result.style.background="#5D6063"
@@ -36,18 +36,34 @@ function moonMode(){
     notep2.style.color="white"
 }
 
+function isNumber(number){
+    var char=String.fromCharCode(number.which);
+    if(!(/[0-9]/.test(char))){
+        number.preventDefault();
+    }
+}
+window.onload = () => {
+    
+    result.onpaste = e => e.preventDefault();
+ }
+
+
 function calculate(){
     var p=result.value;
     var q=eval(p);
-    result.value=q;
+    result.value='';
+    result.placeholder=q
+    
 
 }
 
 function display(value){
     result.value+=value;
+    
 }
 
 function clearValue(){
     result.value=""
+    result.placeholder=''
 }
 

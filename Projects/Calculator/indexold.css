@@ -2,86 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@100;200;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sulphur+Point:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
 }
 .container{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     padding: 0px;
-    height: 100vh;
-}
 
-/* CSS Header */
-.header{
+    
+        
+
+}
+.main-body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 60px;
- 
-    
-} 
-
-.note2{
-    display: none;
-}
-.note1 h1{
-    color: #333333;
-    font-weight: 450;
-    font-size: 80px;
-    line-height: 104px;
-}
-.note1 p{
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 32px;
-    color: #333333;
-}
-.note2 h1{
-    color: #333333;
-    font-weight: 450;
-    font-size: 24px;
-    line-height: 32.28px;
-    text-align: center;
-}
-.note2 p{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #333333;
-    text-align: center;
-
-}
-
-/* CSS MODE */
-.perfomanceMode{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
-    gap: 10px;
-    width: 73px;
-    height: 26px;
-    background:#F9F9F9;
-    border-radius: 16px;
+    padding: 0px;
+    gap: 32px;
+    width: 338px;
+    height: 445px;
     
 }
 
-#iconMoon {
-    color: #DEDEDE;;
-}
 
-i{
-    color: #231F20;
-}
-
-/* CSS Calculator */
 
 .calculator{
     background: #2A2D37;
@@ -104,7 +52,13 @@ i{
 ::placeholder{
     color: white;
 }
-
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
 
 .groupBtn table{
 
@@ -168,14 +122,98 @@ i{
     font-weight: 700;
     font-size: 14px;
 }
+.note2{
+    display: none;
+}
+.note1 h1{
+    color: #333333;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 80px;
+    line-height: 104px;
+}
+.note1 p{
+    font-family: 'SVN-Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #333333;
+}
 
-/* Responsive */
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    width: 603px;
+    height: 288px;
+    margin-left:204px ;
+    
+}
+
+.perfomanceMode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 73px;
+    height: 26px;
+    background:#F9F9F9;
+    border-radius: 16px;
+    
+}
+
+#iconMoon {
+    color: #DEDEDE;;
+}
+
+i{
+    color: #231F20;
+}
+
+
+@media only screen and (max-width: 1140px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 157px;
+    }
+
+    .note2 h1{
+        font-family: 'SVN-Gotham';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #333333;
+        
+    }
+    
+    .note2 p{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        margin-top: 16px;
+        color: #333333;
+    }
+    
+}
+
 
 @media only screen and (max-width:390px ) {
     .container{
         display: flex;
         flex-direction:column;
-        height: 100vh;
+        height: 100%;
         padding: 0px;
         gap: 50px;
     }
@@ -185,8 +223,8 @@ i{
         align-items: center;
         padding: 0px;
         gap: 32px;
-        /* width: 338px;
-        height: 400px; */
+        width: 338px;
+        height: 400px;
         margin: 20px;
     }
     .note1{
