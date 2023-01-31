@@ -7,7 +7,7 @@ let noteh1=document.getElementById("noteh1")
 let notep=document.getElementById("notep1")
 let noteh2=document.getElementById("noteh2")
 let notep2=document.getElementById("notep2")
-
+let error=document.getElementById('error')
 function sunMode(){
     document.body.style.backgroundColor="white"
     iconSun.style.color="#7B7E86"
@@ -49,11 +49,22 @@ window.onload = () => {
 
 
 function calculate(){
+    if(result.value===''){
+        return false;
+    }
     var p=result.value;
-    var q=eval(p);
+    var q='0'+p
+    var z=eval(q)
     result.value='';
-    result.placeholder=q
-    
+
+    if (z===Infinity){
+        error.style.display="block"
+        
+    }else{
+        result.placeholder=z
+        error.style.display="none"
+    }
+
 
 }
 

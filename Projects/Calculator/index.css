@@ -82,7 +82,12 @@ i{
 }
 
 /* CSS Calculator */
-
+#error{
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+    display: none;
+}
 .calculator{
     background: #2A2D37;
     border-radius: 12px;
