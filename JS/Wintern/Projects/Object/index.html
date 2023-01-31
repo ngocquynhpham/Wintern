@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="JavaScript Projects that can help you a lot in your journey. This projects are free for use. " />
+    <link rel="shortcut icon" href="../../assets/general/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+    <title>Wintern | OBJECT</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-page">
+            <a href="../../index.html"><i id="icon-back" class="fa fa-arrow-left"></i></a>
+            <h1 class="title-project">JS OBJECT</h1>
+        </div>
+        <div>
+            <div>
+                <div class="alert alert-info alert-callout">
+                    <h3>Exercise 1</h3>
+                    <div class="list-question">
+                        Viết object "user", gồm:
+                        <ul>
+                            <li> "firstName", "lastName", "age", "email".</li>
+                            <li>“hobbies” (array các sở thích).</li>
+                            <li>“address“ : object con có city, district, ward, street.</li>
+                            <li>getBirthYear (là function return năm sinh).</li>
+                            <li>getAddress (la function lay full dia chi).<mark><i>VD: Đường 3/2, phường 12, quận 10,
+                                        Thành phố HCM</i></mark></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Làm bài tập trong file index.js và gọi hàm tại đây -->
+            <br />
+            <div>
+                <h3>Bài giải Exercise 1</h3>
+                <div class="group-btn"><button onclick="console.log(user.getAddress())">Exercise 1</button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div>
+            <div>
+                <div class="alert alert-info alert-callout">
+                    <h3>Exercise 2</h3>
+                    <div class="list-question">
+                        <ol>
+                            <li>Viết function "inverse_object" nhận object và đảo ngược cặp key - value</li>
+                            <li>Viết function "histogram", nhận một chuỗi string và đếm số lượng mỗi chữ cái xuất hiện trong string</li>
+                            <li>
+                                - Viết object "vector" biểu thị cho vector 2 chiều, gồm 2 property x và y. <mark><i>VD: vector = { x: 1, y: 2}</i></mark>
+                                <br/>
+                                - Thêm 2 method plus và minus nhận 1 vector object khác làm tham số, return kết quả duới dạng object {x, y}
+                                <pre>
+                                    VD:
+                                    let vector1 = {
+                                        x: 3,
+                                        y: 4
+                                    }
+                                    
+                                    let vector2 = {
+                                        x: 5,
+                                        y: -1
+                                    }
+                                    
+                                    vector1.plus(vector2) => return {x: 8, y: 3}
+                                </pre>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Làm bài tập trong file index.js và gọi hàm tại đây -->
+            <br />
+            <div>
+                <h3>Bài giải Exercise 2</h3>
+                <div class="group-btn">
+                    <button onclick="console.log(inverse_object(user))">Câu 1</button>
+                    <button onclick="console.log(histogram('caothanhtai2001'))">Câu 2</button>
+                    <button onclick="console.log(vector1.plus(vector2),vector1.minus(vector2))">Câu 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

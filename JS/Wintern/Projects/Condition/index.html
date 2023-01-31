@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="JavaScript Projects that can help you a lot in your journey. This projects are free for use. " />
+    <link rel="shortcut icon" href="../../assets/general/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+    <title>Wintern | Condition</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-page">
+            <a href="../../index.html"><i id="icon-back" class="fa fa-arrow-left"></i></a>
+            <h1 class="title-project">JS Condition</h1>
+        </div>
+        <div>
+            <div class="alert alert-info alert-callout">
+                <h3>Exercise</h3>
+                <div class="list-question">
+                    <ol>
+                        <li>Viết chương trình chạy vòng lặp từ số 1 đến 100:
+                            <ul>
+                                <li>Nếu gặp số CHỈ chia hết cho 3, console.log("Fizz").</li>
+                                <li>Gặp số CHỈ chia hết cho 5, console.log("Buzz"). </li>
+                                <li>Gặp số chia hết CHO CẢ 3 và 5, console.log("FizzBuzz"),</li>
+                                <li>Còn lại console.log() ra số. </li>
+                            </ul>
+                        </li>
+                        <br />
+                        <li>Fermat có nói rằng không có số nguyên dương a, b, c mà: a^n + b^n = c^n với n > 2
+                            <ul>
+                                <li>Viết function check_fermat nhận 4 tham số a, b, c, và n để kiểm tra câu nói trên.
+                                    Nếu n lớn hơn 2 mà $a^n + b^n = c^n$ thì print "Fermat sai", còn trường hợp khác
+                                    thì print "Fermat đúng" ( nên nhớ điều kiện cho a, b, c phải lớn hơn 0 và là số
+                                    nguyên ).</li>
+                                <li>Viết chương trình cho phép user nhập số a, b, c và n. Sau đó dùng hàm check_fermat ở
+                                    trên để kiểm tra nguyên lý Fermat.</li>
+                            </ul>
+                        </li>
+                        <br />
+                        <li>Giả sử cho 3 cây que, ta có: Nếu độ dài của 1 que bất kì lớn hơn tổng độ dài của 2 que còn
+                            lại, bạn sẽ không thể ghép thành hình tam giác
+                            <ul>
+                                <li>Viết 1 hàm is_triangle nhận 3 số nguyên dương làm tham số ( tượng trưng cho độ dài )
+                                    , và print "Yes" hoặc "No", dựa trên việc bạn có thể ghép thành hình tam giác từ 3
+                                    tham số trên không</li>
+                                <li>Viết chương trình cho phép user nhập 3 độ dài trên và dùng hàm is_triangle để cho
+                                    user biết có thể ghép thành hình tam giác hay không</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="group-btn"><button onclick="bt1()">Câu 1</button>
+                
+        <button onclick=" check_fermat(-2,4,5,2)">Câu 2</button>
+        <button onclick="bt3();">Câu 3</button>
+    </div>
+</body>
+<!-- Làm bài tập trong file index.js và gọi hàm tại đây -->
+
+
+</html>

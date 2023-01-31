@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@100;200;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #F2F3F5;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Left Screen  */
+.left-screen {
+    background-color: #E5E6F8;
+    width: 560px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    background: #E5E6F8;
+    border-radius: 8px 0px 0px 8px;
+
+
+}
+
+.left-screen img {
+    width: 520.88px;
+    height: 344.82px;
+}
+
+/* Right Screen  */
+.right-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 24px;
+    gap: 24px;
+
+    width: 374px;
+    height: 500px;
+
+    background: #FFFFFF;
+    border-radius: 0px 8px 8px 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 246px;
+    height: 56px;
+
+}
+
+.logo p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #475467;
+}
+
+.logo img {
+    width: 220px;
+    height: 27px;
+    margin: auto;
+
+
+}
+
+.right-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+}
+
+.group-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 18px;
+    width: 326px;
+    height: 162px;
+
+}
+
+.group-input input {
+    padding: 8px 12px;
+    gap: 68px;
+
+    width: 326px;
+    height: 44px;
+
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+
+}
+
+
+
+.right-screen form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 28px;
+    gap: 60px;
+
+}
+
+.right-screen button {
+    padding: 8px 12px;
+    gap: 68px;
+    width: 326px;
+    height: 44px;
+    background: #006FBA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+.right-screen a {
+    font-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: #006FBA;
+}
+
+.right-screen .wrap-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.right-screen .wrap-input label {
+    font-weight: 525;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+/* css input password */
+.wrap-pwd {
+    position: relative;
+    
+    
+}
+
+#icon-eye {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 14px;
+}
+
+.right-screen .wrap-input .noteLabel{
+    color: red;
+    font-size: 11px;
+    display:none ;
+}
+.body{
+    background-color: #00ABBF;
+}
+.img-welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+/* responsive */
+@media only screen and (max-width:390px) {
+
+    .left-screen {
+        display: none;
+    }
+
+    .container {
+        margin: 20px;
+
+        height: 100vh;
+
+    }
+
+    .right-screen {
+        background-color: #F2F3F5;
+        width: 350px;
+        height: 500px;
+        border-radius: 8px;
+    }
+
+    body {
+
+        background: #fff;
+    }
+
+    .logo {
+        width: 246px;
+        height: 56px;
+    }
+
+    .logo img {
+        width: 220px;
+    }
+
+}
+#hello {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width:1024px) {
+    .container {
+        margin: 66px;
+
+    }
+}

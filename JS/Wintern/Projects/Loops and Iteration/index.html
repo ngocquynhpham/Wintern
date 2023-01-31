@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="JavaScript Projects that can help you a lot in your journey. This projects are free for use. " />
+    <link rel="shortcut icon" href="../../assets/general/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+    <title>Wintern | Loops and Iteration</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-page">
+            <a href="../../index.html"><i id="icon-back" class="fa fa-arrow-left"></i></a>
+            <h1 class="title-project">Loops and Iteration</h1>
+        </div>
+        <div>
+            <div class="alert alert-info alert-callout">
+                <h3>Exercise</h3>
+                <div class="list-question">
+                    <ol>
+                        <li>
+                            <pre>Console.log() theo dạng sau: <mark><i>(Xem ví dụ tại file index.js trong code)</i></mark>
+                            3space
+                        a               Math.sqrt(a)
+                        ---            ------------
+                        1.0             1.0
+                        2.0            1.41421356237
+                        ....
+                        10.0.         10.000.000.000
+                    </pre>
+                        </li>
+                        <br />
+                        <li>
+                            Trong JS có "eval(string)" dùng để evaluate (đánh giá) string và chuyển string thành code.
+                            VD eval('typeof 2') sẽ in ra number.
+                            <ul>
+                                <li>Viết phần mềm dùng while, sử dụng prompt() để LIÊN TỤC yêu cầu người dùng nhập
+                                    vào, sau đó
+                                    dùng eval() để chuyển input của người dùng sang code.
+                                </li>
+                                <li>Program CHỈ DỪNG khi user nhập "done"</li>
+                            </ul>
+                        </li>
+                        <br />
+                        <li>
+                            Giả sử 40 năm nữa trái đất mất tiu, các nhà khoa học phải sáng chế phi thuyền không gian
+                            trong 30 năm để có thể đưa toàn bộ con người lên vũ trụ. Viết hàm tính toán lượng dân số sau
+                            30 năm:
+                            <ul>
+                                <li>Cho population là dân số hiện tại</li>
+                                <li>Cho n là dân số tăng lên sau MỖI THÁNG futurePopulation(population, n)</li>
+                                <li>VD: futurePopulation(256, 2), dân số hiện tại là  256, mỗi tháng tăng 2 dân số, sau
+                                    30 năm sẽ là 976 dân số</li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- Làm bài tập trong file index.js và gọi hàm tại đây -->
+        <br />
+        <div>
+            <h3>Bài giải</h3>
+            <div class="group-btn"><button onclick="mySqrt()">Câu 1</button>
+                
+                <button onclick="cau2()">Câu 2</button>
+                <button onclick="cau3(256,2)">Câu 3</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+</html>

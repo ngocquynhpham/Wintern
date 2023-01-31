@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="JavaScript Projects that can help you a lot in your journey. This projects are free for use. " />
+  <link rel="shortcut icon" href="../../assets/general/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/logo/Favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/967bcdfa45.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Wintern | DOM</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-page">
+      <h1> Tạo mật khẩu mới</h1>
+    </div>
+
+
+
+    <div class="form-group">
+      <div class="ippwd">
+        <div class="group-icon">
+          <i id="icon-lock" class="fas fa-lock"></i>
+          <input type="password" id="pwd" placeholder="Mật khẩu">
+          <i onclick="showpwd(event,`pwd`)" id="icon-eye" class="fa-regular fa-eye-slash"></i>
+        </div>
+
+        <label id="lbpwd"> Vui lòng không bỏ trống trường này</label>
+      </div>
+
+      <div class="ippwd">
+        <div class="group-icon">
+          <i id="icon-lock" class="fas fa-lock"></i>
+          <input type="password" id="expwd" placeholder="Xác nhận mật khẩu">
+          <i onclick="showpwd(event,`expwd`)" id="icon-eye" class="fa-regular fa-eye-slash"></i>
+        </div>
+
+        <label id="lbexpwd"> Vui lòng không bỏ trống trường này</label>
+      </div>
+
+      <div class="note">
+
+        <p>Mật khẩu phải</p>
+        <ul>
+          <li id="minpwd"> Có ít nhất 8 ký tự</li>
+          <li id="upcasepwd">Có ít nhất 1 ký tự in hoa</li>
+          <li id="upcharacterspecial">Có ít nhất 1 ký tự đặc biệt</li>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <button class="btnlogin" id="btnlogin" type="button" onclick="checkValidation()" data-toggle="modal" data-target="">
+      Tạo mật khẩu mới</button>
+
+    <!-- Modal -->
+
+
+
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-container">
+        <div class="modal-img">
+          <img src="/assets/images/Group2.png" alt="nút thành công">
+        </div>
+        <div class="modal-body">
+          <h1>Thành công</h1>
+          <p>Tài khoản của bạn đã sẳn sàng !</p>
+        </div>
+        <div class="modal-button">
+          <button type="button" data-dismiss="modal">Quay lại màn hình đăng nhập</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>

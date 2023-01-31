@@ -1,0 +1,14 @@
+.horizontalList li{
+    float: left;
+    padding: 5px;
+    margin: 20px;
+}
+
+.styletable table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+.styletable th:nth-child(odd),td:nth-child(even) {
+    background-color: #D6EEEE;
+  }

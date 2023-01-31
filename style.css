@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #DF944F;
+    text-align: center;
+    margin: 0px;
+    font-weight: 500;
+
+
+}
+
+body {
+
+    background-color: #ACA6A0
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    padding: 26px;
+    gap: 20px;
+    align-items: center;
+}
+
+/* profile */
+.profile {
+    background-color: #1D1915;
+    width: 320px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.borderAvatar {
+    border: 3px solid #DF944F;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.social {
+    background-color: #DF944F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 80%;
+    gap: 8px;
+}
+
+.social a {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+a {
+    padding: 5px;
+    margin: 5px;
+}
+
+p {
+    color: #ACA6A0;
+    text-align: center;
+}
+
+
+
+/* CSS CARD MUSIC */
+.card-music {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    width: 320px;
+    border: 4px solid #DF944F;
+    animation: test 10s ;
+    animation-iteration-count: infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes test{
+   
+  25%  {background-color:yellow;color: red; left:200px; top:0px;}
+  50%  {background-color:blue; color: yellow;left:200px; top:200px;}
+  75%  {background-color:brown; color: blue;left:0px; top:200px;}
+  100% {background-color:red;color:green ; left:0px; top:0px;}
+}
+
+
+
+
+
+.card-music ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    
+}
+
+.card-music .number {
+    font-size: 24px;
+    color: #DF944F;
+    font-weight: 500;
+    animation: test 10s ;
+    animation-iteration-count: infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.card-music .name {
+    font-size: 18px;
+    color: #1D1915;
+    animation: test 10s ;
+    animation-iteration-count: infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+
+/* card-film */
+
+.card-film {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.card-film ol {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+.border-card-flim {
+    background-color: #1D1915;
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+    border: #DF944F solid 5px;
+    border-radius: 14px;
+    gap: 18px;
+    background-color: #fff;
+    padding: 14px;
+
+}
+
+.border-card-flim:hover{
+    cursor: pointer;
+    box-shadow: 15px 10px 10px rgba(246, 246, 246, 0.24);
+    transform: scale(1.1,1.1);
+}
+
+.footer-card-film {
+
+    display: flex;
+
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card-film .year-film {
+    color: #ACA6A0;
+
+}
+
+.footer-card-film .trailer {
+    color: #DF944F;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+.trailer:hover {
+    transform: scale(1.1)
+   
+    
+}
+.trailer:hover i{
+    transform: translate(10px)
+   
+    
+}
+
+
+
+
+.img-trailer img {
+    object-fit: fill;
+    width: 100%;
+    height: 200px;
+    border-radius: 14px;
+}
+
+.name-film {
+    font-size: 18px;
+    color: #1D1915;
+    font-weight: 500;
+    text-align: left;
+}
+
+i {
+    font-weight: 1000;
+    width: 20px;
+}
+
+.title-music {
+    padding-bottom: 10px;
+}
