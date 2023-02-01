@@ -31,10 +31,7 @@ let lbUser = document.getElementById("labelUser")
 let form = document.getElementById("formLogin")
 let hello = document.getElementById("hello")
 
-// lbPwd.style.display = "block"
-// value_pwd.style.borderColor = "red"
-// lbUser.style.display = "block"
-// value_user.style.borderColor = "red"
+
 
 function Login() {
     checkValidation(value_user.value, value_pwd.value);
@@ -42,11 +39,12 @@ function Login() {
 
 function checkValidation(value_user, value_pwd) {
     // check null
-    if (value_user === "" || value_pwd === "" ) {
+    if (value_user === "" || value_pwd === "") {
         lbPwd.innerHTML = "Vui lòng không để trống Tên đăng nhập và Mật khẩu";
         lbPwd.style.display = "block";
+        return false
     }
-    else if (value_user !== "" && value_pwd !== "" ) {
+    else if (value_user !== "" && value_pwd !== "") {
         lbPwd.style.display = "none";
     }
 
@@ -57,25 +55,22 @@ function checkValidation(value_user, value_pwd) {
         fullname = list_account[i].fullname;
 
         if (value_user === username && value_pwd === password) {
-            localStorage.setItem('if_username',username)
-            localStorage.setItem('if_password',password)
-            localStorage.setItem('if_fullname',fullname)
-           
-            form.action="./welcome.html"
-            console.log("Đăng nhập thành công", fullname);
-            console.log("Thong tin user",fullname, INFOR);
+            localStorage.setItem('if_username', username)
+            localStorage.setItem('if_password', password)
+            localStorage.setItem('if_fullname', fullname)
+            form.action = "./welcome.html"
+            hello.innerHTML = "Chào Mừng " + localStorage.getItem('if_fullname')
             lbPwd.style.display = "none";
-            
             return INFOR;
-
         } else {
-            lbPwd.innerHTML = "Tài khoản hoặc mật khẩu không chính xác"
             lbPwd.style.display = "block"
+            lbPwd.innerHTML = "Tài khoản hoặc mật khẩu không chính xác"
+
         }
     }
 }
 
-hello.innerHTML="Chào Mừng "+localStorage.getItem('if_fullname')
+
 
 
 
